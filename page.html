@@ -1,232 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-</head>
-   
     <title>facebook</title>
 
 </head>
 
-<body >
+<body>
 
     <!---------------------------------header------------------------------------------------------------------------------------>
-<div class="conatiner">
-    <header >
-        <div class="container-fluid ">
-            <nav class="container-fluid  text-white fixed-top sideStyle">
-                <div class="d-flex justify-content-between col-xs-12 pb-3">
-                  
-                        <img id="profilePic" src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png">
-                          <h2 >Facebook</h2>
-     
-                            <input type="text" class="search-bar mt-2 mr-5" placeholder="Search"><i class="fas fa-search mt-3"></i>
+    <div class="conatiner">
+        <header>
+            <div class="container-fluid ">
+                <nav class="container-fluid  text-white fixed-top sideStyle">
+                    <div class="d-flex justify-content-between col-xs-12 pb-3">
+
+                        <img id="profilePic"
+                            src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png">
+                        <h2>Facebook</h2>
+
+                        <input type="text" class="search-bar mt-2 mr-5" placeholder="Search"><i
+                            class="fas fa-search mt-3"></i>
                         <!-- dropdown and profile-->
                         <div class="setP d.flex">
-                           
-            <ul class="navbar-nav">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user "></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Settings</a>
-                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt">Logout</i> </a>
-                   
-                    </div>
-                  </li>
-            </ul>
-        
-                            </div>   
-                            
-                 </div> 
-            </nav>
-        </div>
-        
-        
-    </header>
-<!-------
-    
-    ----------------------------------main------------------------------------------------------------------->
-    <div class="container-fluid">
-    <main>
-      
-        <div class="container-fluid">
-            <div class="row ">
-                <!-----------------------------------left bar-------------------------------------------->
-                <div class="col-3 sideStyle card">
-                    
-                    <div class="profile  text-center">
-            <img class="img-fluid d-block max-auto profilePic" src="https://th.bing.com/th/id/OIP.KMwP2xQU81GC9kD1xxGD4AAAAA?rs=1&pid=ImgDetMain" class="igm-resposive" id="profilePic">
-                        <p class="username" id="username1"><strong>Username</strong></p>
-                        <a class="btn btn-secondary text" data-toggle="collapse" href="#edit" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                            Edit
-                         </a>
-                         
-                 <div class="collapse" id="edit">
-                     <ul class="list-group">
-                         <fieldset>
-                           
-                                <input type="text" placeholder="edit username" id="updateUser">
-                               
-                                <button class="btn btn-success" id="save">save</button>
-                         </fieldset>
-                       </ul>
-                     </div>
-                        
-                     <a class="btn btn-secondary text" data-toggle="collapse" href="#menu" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                        Menu
-              </a>
-                     
-             <div class="collapse" id="menu">
-                 <ul class="list-group ml-5 ">
-                     <li class="list-group-item ">  <a href=""><i class="fas fa-user-friends text-red">friends</i></a> </li>
-                     <li class="list-group-item"><a href=""><i class="fas fa-users text-red"> Groups</i></a></li>
-                     <li class="list-group-item"><a href=""><i class="fas fa-store text-red">  store</i></a> </li>
-                    
-                   </ul>
-                
-             </div>
+                            <ul class="navbar-nav">
 
-             
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user "></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#"><i class="fas fa-cog"></i> Settings</a>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt">Logout</i> </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
 
                     </div>
-          
-                              
-                </div>
-                <!--main column -->
-                <div class="col-6 text-center midStyle card" >
-
-                    <!-------------creating btn photo and post plus text box-->
-                    <div class="creation-box ">
-                        
-                        <textarea placeholder="Write your post here..." class="txtArea" id="textArea"></textarea>
-                        <input type="file" id="photo/video" accept="image/* video/*" style="display:none">
-                        <div>
-                        <button class="post-button mt-2 bg-primary" id="postBtn">Post</button>
-                        <button class="post-button mt-2 bg-success" id="upload-button">Image/video</button>
-                          
-                        </div> 
-                    <!------------------------------FEEDS--------------------------------------------------------------------------------------->
-                      <div class="container bg-secondary mt- mb-1">
-                        Feeds
-                      </div>
-                      </div>
-                      
-                      <!---------------------div FOR THE WHOLE COLOMN-------------->
-            
-                      <div class="col scr well " id="midContent" >
-                       
-                        <!-- post and images-->
-    <!--------------------------------dIV FOR TEXT CONTENT-------------------------------------------------------------->
-   <!--------------------------------post 1--->
-    <div class="container-fluid postStyle " >
-        
-                            
-        <nav class="d-flex mt-2 justify-content-between navPst">
-        <img class="img-fluid max-auto profilePic"src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png" >
-    <p id="username2">username</p> 
-        <div class="dTimem "id="dTime"></div>
-        </nav>
-        <hr>
-
-        <div class="postContent">
-
-            <img class="postPic igm-responsive img-fluid" src="https://wallpapercave.com/wp/wp3158676.jpg" alt="">
-            <div class="like">
-            <div class="row mt-5 ml-5 pl-5">
-                <nav class="likeBtn ">
-
-                    <div class="btn-group" role="group" >
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-thumbs-up"></i>Like</button>
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-comment"></i>Comments</button>
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-share"></i>Share</button>
-                      </div>
                 </nav>
-               </div>
-          </div>
-        </div>
-
-
-        
-        
-    </div>
-    <!------------------------------post 2--==========================================================================================-->
-
-                       
-                    </div>  
-                    
-                    
-                </div>
-    <!--------------------------------------------------------------------------------------------------------------------------->
-                <!--code for the right part-->
-                <div class="col-3  sideStyle card">
-                  <div class="friends-online ml-5 mr-5">
-                    <nav >
-                        <ul class="list-group ">
-                            <li class="list-group-item active" aria-current="true">ONLINE</li>
-                            <li class="list-group-item "><i class="fas fa-circle text-success"></i>Unsername 1</li>
-                            <li class="list-group-item"><i class="fas fa-circle text-success"></i> Username 2</li>
-                            <li class="list-group-item"><i class="fas fa-circle text-success"></i> Username 3</li>
-                            
-                          </ul>
-
-                    </nav>
-                   
-                      <!-- Add more friends here -->
-                    </ul>
-                  </div>
-
-                 
-
-                  <div class="notifications  ml-5 mr-5 pt-2">
-                    <nav>
-                        <ul class="list-group">
-                            <li class="list-group-item active" aria-current="true"><i class="fas fa-bell"></i> Notifications</li>
-                            <li class="list-group-item ">A second item</li>
-                            <li class="list-group-item ">A third item</li>
-                            <li class="list-group-item ">A fourth item</li>
-                            
-                           
-                          </ul>
-
-                    </nav>
-                  </div>
-                
-                </div>
-<!----------------------------------------------------------------------------------------------------->
             </div>
 
-        </div>
 
-       
-        
-    </main>
-    </div>
-    <!---------------------------FOOTER------------------------------------------------------------------------------------------------>
- 
+        </header>
+        <!-------
     
-</div>
-<div class="container-fluid">
-    <footer class="bg-success" >
-        <div  class="text-center">
-            <a href="#">about</a>  <a href="#">privacy</a>  <a href="#">T&Cs</a>
+    ----------------------------------main------------------------------------------------------------------->
+        <div class="container-fluid">
+            <main>
+
+                <div class="container-fluid">
+                    <div class="row ">
+                        <!-----------------------------------left bar-------------------------------------------->
+                        <div class="col-3 sideStyle card">
+
+                            <div class="profile  text-center">
+                                <img class="img-fluid d-block max-auto profilePic"
+                                    src="https://th.bing.com/th/id/OIP.KMwP2xQU81GC9kD1xxGD4AAAAA?rs=1&pid=ImgDetMain"
+                                    class="igm-resposive" id="profilePic">
+                                <p class="username" id="username1"><strong>Username</strong></p>
+                                <a class="btn btn-secondary text" data-toggle="collapse" href="#edit" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample1">
+                                    Edit
+                                </a>
+
+                                <div class="collapse" id="edit">
+                                    <ul class="list-group">
+                                        <fieldset>
+
+                                            <input type="text" placeholder="edit username" id="updateUser">
+
+                                            <button class="btn btn-success" id="save">save</button>
+                                        </fieldset>
+                                    </ul>
+                                </div>
+
+                                <a class="btn btn-secondary text" data-toggle="collapse" href="#menu" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample1">
+                                    Menu
+                                </a>
+
+                                <div class="collapse" id="menu">
+                                    <ul class="list-group ml-5 ">
+                                        <li class="list-group-item "> <a href=""><i
+                                                    class="fas fa-user-friends text-red">friends</i></a> </li>
+                                        <li class="list-group-item"><a href=""><i class="fas fa-users text-red">
+                                                    Groups</i></a></li>
+                                        <li class="list-group-item"><a href=""><i class="fas fa-store text-red">
+                                                    store</i></a> </li>
+
+                                    </ul>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+                        <!--main column -->
+                        <div class="col-6 text-center midStyle card">
+
+                            <!-------------creating btn photo and post plus text box-->
+                            <div class="creation-box ">
+
+                                <textarea placeholder="Write your post here..." class="txtArea"
+                                    id="textArea"></textarea>
+                                <input type="file" id="photo/video" accept="image/* video/*" style="display:none">
+                                <div>
+                                    <button class="post-button mt-2 bg-primary" id="postBtn">Post</button>
+                                    <button class="post-button mt-2 bg-success" id="upload-button">Image/video</button>
+
+                                </div>
+                                <!------------------------------FEEDS--------------------------------------------------------------------------------------->
+                                <div class="container bg-secondary mt- mb-1">
+                                    Feeds
+                                </div>
+                            </div>
+
+                            <!---------------------div FOR THE WHOLE COLOMN-------------->
+
+                            <div class="col scr well " id="midContent">
+
+                                <!-- post and images-->
+                                <!--------------------------------dIV FOR TEXT CONTENT-------------------------------------------------------------->
+                                <!--------------------------------post 1--->
+                                <div class="container-fluid postStyle ">
+
+
+                                    <nav class="d-flex mt-2 justify-content-between navPst">
+                                        <img class="img-fluid max-auto profilePic"
+                                            src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png">
+                                        <p id="username2">username</p>
+                                        <div class="dTimem " id="dTime"></div>
+                                    </nav>
+                                    <hr>
+
+                                    <div class="postContent">
+
+                                        <img class="postPic igm-responsive img-fluid"
+                                            src="https://wallpapercave.com/wp/wp3158676.jpg" alt="">
+                                        <div class="like">
+                                            <div class="row mt-5 ml-5 pl-5">
+                                                <nav class="likeBtn ">
+
+                                                    <div class="btn-group" role="group">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary bg-light"><i
+                                                                class="fas fa-thumbs-up"></i>Like</button>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary bg-light"><i
+                                                                class="fas fa-comment"></i>Comments</button>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary bg-light"><i
+                                                                class="fas fa-share"></i>Share</button>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                                <!------------------------------post 2--==========================================================================================-->
+                            </div>
+
+
+                        </div>
+                        <!--------------------------------------------------------------------------------------------------------------------------->
+                        <!--code for the right part-->
+                        <div class="col-3  sideStyle card">
+                            <div class="friends-online ml-5 mr-5">
+                                <nav>
+                                    <ul class="list-group ">
+                                        <li class="list-group-item active" aria-current="true">ONLINE</li>
+                                        <li class="list-group-item "><i class="fas fa-circle text-success"></i>Username
+                                            1</li>
+                                        <li class="list-group-item"><i class="fas fa-circle text-success"></i> Username
+                                            2</li>
+                                        <li class="list-group-item"><i class="fas fa-circle text-success"></i> Username
+                                            3</li>
+
+                                    </ul>
+
+                                </nav>
+
+                                <!-- Add more friends here -->
+                                </ul>
+                            </div>
+
+
+
+                            <div class="notifications  ml-5 mr-5 pt-2">
+                                <nav>
+                                    <ul class="list-group">
+                                        <li class="list-group-item active" aria-current="true"><i
+                                                class="fas fa-bell"></i> Notifications</li>
+                                        <li class="list-group-item ">A second item</li>
+                                        <li class="list-group-item ">A third item</li>
+                                        <li class="list-group-item ">A fourth item</li>
+
+
+                                    </ul>
+
+                                </nav>
+                            </div>
+
+                        </div>
+                        <!----------------------------------------------------------------------------------------------------->
+                    </div>
+
+                </div>
+
+
+
+            </main>
         </div>
-       
-    </footer>
-</div>
+        <!---------------------------FOOTER------------------------------------------------------------------------------------------------>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="javas.js"></script>
+    </div>
+    <div class="container-fluid">
+        <footer class="bg-success">
+            <div class="text-center">
+                <a href="#">about</a> <a href="#">privacy</a> <a href="#">T&Cs</a>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javas.js"></script>
 </body>
 
 </html>
