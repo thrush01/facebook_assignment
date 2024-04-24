@@ -21,7 +21,7 @@
             <nav class="container-fluid  text-white fixed-top sideStyle">
                 <div class="d-flex justify-content-between col-xs-12 pb-3">
                   
-                        <img src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png">
+                        <img id="profilePic" src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png">
                           <h2 >Facebook</h2>
      
                             <input type="text" class="search-bar mt-2 mr-5" placeholder="Search"><i class="fas fa-search mt-3"></i>
@@ -62,10 +62,8 @@
                 <div class="col-3 sideStyle card">
                     
                     <div class="profile  text-center">
-                        <img class="img-fluid d-block max-auto" src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png" class="igm-resposive">
-                        <h3>Username</h3>
-
-
+            <img class="img-fluid d-block max-auto profilePic" src="https://th.bing.com/th/id/OIP.KMwP2xQU81GC9kD1xxGD4AAAAA?rs=1&pid=ImgDetMain" class="igm-resposive" id="profilePic">
+                        <p class="username" id="username1"><strong>Username</strong></p>
                         <a class="btn btn-secondary text" data-toggle="collapse" href="#edit" role="button" aria-expanded="false" aria-controls="collapseExample1">
                             Edit
                          </a>
@@ -73,13 +71,11 @@
                  <div class="collapse" id="edit">
                      <ul class="list-group">
                          <fieldset>
-                            <form action="">
-                                <input type="text" placeholder="edit username">
+                           
+                                <input type="text" placeholder="edit username" id="updateUser">
                                
-                            </form>
+                                <button class="btn btn-success" id="save">save</button>
                          </fieldset>
-                         <li class="list-group-item bg-success"><a href=""> <button>save</button></a> </li>
-                        
                        </ul>
                      </div>
                         
@@ -88,9 +84,9 @@
               </a>
                      
              <div class="collapse" id="menu">
-                 <ul class="list-group">
-                     <li class="list-group-item">  <a href=""><i class="fas fa-user-friends text-red">  friends</i> </a> </li>
-                     <li class="list-group-item"><a href=""><i class="fas fa-users text-red">  users</i></a></li>
+                 <ul class="list-group ml-5 ">
+                     <li class="list-group-item ">  <a href=""><i class="fas fa-user-friends text-red">friends</i></a> </li>
+                     <li class="list-group-item"><a href=""><i class="fas fa-users text-red"> Groups</i></a></li>
                      <li class="list-group-item"><a href=""><i class="fas fa-store text-red">  store</i></a> </li>
                     
                    </ul>
@@ -124,7 +120,7 @@
                       
                       <!---------------------div FOR THE WHOLE COLOMN-------------->
             
-                      <div class="col scr well" >
+                      <div class="col scr well " id="midContent" >
                        
                         <!-- post and images-->
     <!--------------------------------dIV FOR TEXT CONTENT-------------------------------------------------------------->
@@ -133,8 +129,8 @@
         
                             
         <nav class="d-flex mt-2 justify-content-between navPst">
-            <img class="img-fluid max-auto"src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png" class="pstPic">
-        <h6>username</h6>
+        <img class="img-fluid max-auto profilePic"src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png" >
+    <p id="username2">username</p> 
         <div class="dTimem "id="dTime"></div>
         </nav>
         <hr>
@@ -161,42 +157,11 @@
         
     </div>
     <!------------------------------post 2--==========================================================================================-->
-   
-    <div class="container-fluid postStyle " >
-        
-                            
-        <nav class="d-flex mt-2 justify-content-between navPst">
-            <img class="img-fluid max-auto"src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-transparent-png-pictures-icons-and-0.png" class="pstPic">
-        <h6>username</h6>
-        <div class="dTimem "id="dTime"></div>
-        </nav>
-        <hr>
 
-        <div class="postContent">
-
-            <img class="postPic igm-responsive img-fluid" src="https://wallpapercave.com/wp/wp3158676.jpg" alt="">
-            <div class="like">
-            <div class="row mt-5 ml-5 pl-5">
-                <nav class="likeBtn ">
-
-                    <div class="btn-group" role="group" >
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-thumbs-up"></i>Like</button>
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-comment"></i>Comments</button>
-                        <button type="button" class="btn btn-outline-primary bg-light"><i class="fas fa-share"></i>Share</button>
-                      </div>
-                </nav>
-               </div>
-          </div>
-        </div>
-
-
-        
-        
-    </div>
-
-    <!-------------------------------------------DIV IMG AND VID CONTENT --------------------------------------===========-->
                        
-                    </div>   
+                    </div>  
+                    
+                    
                 </div>
     <!--------------------------------------------------------------------------------------------------------------------------->
                 <!--code for the right part-->
