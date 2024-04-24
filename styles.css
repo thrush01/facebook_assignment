@@ -180,3 +180,12 @@ textarea,
 header {
   height: 10px;
 }
+@media(max-width:700px){
+
+  .rightSide{
+    display: none;
+  }
+  .leftSide{
+    display: none;
+  }
+}
